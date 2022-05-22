@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+body,html{
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+
+.game-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+}
+
+.game-center{
+    padding: 0 50px;
+    border: 4px solid black;
+    background: linear-gradient(to top,#002244 , skyblue );
+    max-width: 90%;
+}
+
+
+#title{
+    font-size: 3.5rem;
+    text-align: center;
+    margin:0;
+    padding: 0;
+    margin-bottom: 0.3em;
+}
+
+.screen{
+    background: rgba(255,255,255,0.8);
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 500px;
+    height: 220px;
+    padding: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+#screen-text{
+    text-align: center;
+}
+
+#guess-count{
+   color: red;
+   text-align: right;
+}
+
+.win-number{
+    background-color: rgb(156, 72, 89);
+    font-size: 4rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    display: none;
+    
+}
+.accent{
+    display: block;
+    filter: blur(4px);
+    background-color: black;
+}
+
+.start{
+    text-align: center;
+    margin-bottom: 2em;
+    display: none;
+}
+
+.start-btn{
+    cursor: pointer;
+    background: transparent;
+    background-color: #006400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.3em 2em;
+    font-size: 1.5rem;
+    transition: 500ms;
+    
+}
+
+.start-btn:hover{
+   transform: scale(1.2) 
+}
+
+.guess{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    
+}
+.guess label{
+    margin-bottom: 1em;
+    font-size: 1.4rem;
+}
+
+.guess input{
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1em;
+    background: rgba(255,255,255,0.8);
+    border: none;
+    border-radius: 3px;
+}
+
+.guess .enter button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    background-color: #006400;
+    padding: 0.3em 2em;
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    transition: 500ms;
+}
+
+.guess .enter button:hover{
+    transform: scale(1.1);
+}
+
+
+
+.play-again{
+    text-align: center;
+    margin-bottom: 2em;
+    display: none;
+}
+
+.play-again-btn{
+    cursor: pointer;
+    background: transparent;
+    background-color: #006400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.2em 1.5em;
+    font-size: 1.4rem;
+    transition: 500ms;
+}
+
+.play-again-btn:hover{
+    transform: scale(1.2) 
+ }
+
+ .exit{
+    text-align: center;
+    margin-bottom: 2em;
+    display: none;
+}
+
+.exit-btn{
+    cursor: pointer;
+    background: transparent;
+    background-color: #AA0000;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 0.2em 1.5em;
+    font-size: 1.4rem;
+    transition: 500ms;
+}
+
+.exit-btn:hover{
+    transform: scale(1.2) 
+ }
+
+.show-play{
+    display: none;
+}
+
+.active{
+    display: block;
+}
